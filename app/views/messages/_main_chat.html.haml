@@ -1,0 +1,40 @@
+%div.main_chat
+
+    %div.main_chat__main-header
+
+        %div.main_chat__main-header__left-box
+
+            %h2.main_chat__main-header__left-box__current-group
+                a
+                %ul.main_chat__main-header__left-box__current-group__member-list
+                    member : 
+                    %li.main_chat__main-header__left-box__current-group__member-list__member 
+                        taniguchi
+
+        %div.main_chat__main-header__edit-btn
+            Edit
+    %div.main_chat__messages
+
+        %div.main_chat__messages__message
+
+            %div.main_chat__messages__message__upper-info  
+
+                %p.main_chat__messages__message__upper-info__talker
+                    taniguchi
+                %p.main_chat__messages__message__upper-info__date
+                    2020-03-10 12:34:56
+            %p.main_chat__messages__message__text
+                hello world
+    %div.main_chat__new-message
+
+        %form.main_chat__new-message__input-box
+
+            %input.main_chat__new-message__input-box__text{:name => "message[content]", :placeholder => "type a message", :type => "text", :id => "message_content"}
+
+                %label.main_chat__new-message__input-box__image
+                    <i class="far fa-images"></i>
+                    %input.main_chat__new-message__input-box__image__input{:type => "file"}
+                      
+
+        %submit.main_chat__new-message__submit-btn{:type => "submit", :name => "commit", :value => "send", :data_disable_with => "Send"}
+            send
