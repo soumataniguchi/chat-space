@@ -1,15 +1,15 @@
-%div.side_bar
-    %div.side_bar__side-header
-        %div.side_bar__side-header__box
+.side_bar
+    .side_bar__side-header
+        .side_bar__side-header__box
             %p.side_bar__side-header__box__user-name
                 taniguchi
             %ul.side_bar__side-header__box__box-menu
                 %li.side_bar__side-header__box__box-menu__new-group
-                    <i class="far fa-edit"></i>
+                    = icon('far', 'edit')
                 %li.side_bar__side-header__box__box-menu__edit-user
-                    <i class="fas fa-cog"></i>
-    %div.side_bar__groups
-        %div.side_bar__groups__group
+                    = icon('fas', 'cog')
+    .side_bar__groups
+        .side_bar__groups__group
             %p.side_bar__groups__group__group-name
                 a
             %p.side_bar__groups__group__latest-message
