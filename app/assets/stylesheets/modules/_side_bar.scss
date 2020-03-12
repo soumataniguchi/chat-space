@@ -16,27 +16,34 @@
             justify-content: space-between;
             width: 100%;
             font-weight: bold;
-        
+
+
             &__user-name {
                 font-size: 20px;
                 color: white;
             }
             &__box-menu {
+                margin-left: 10px;
                 display: flex;
                 list-style: none;
             
-                &__new-group {
-                    margin-left: 0.3em;
-                    color: white;
-                }
-                &__edit-user {
-                    margin-left: 0.3em;
-                    color: white;
-
+                    &__new-group {
+                        font-size: inherit;
+                        .a {
+                            text-decoration: none;
+                            color: white;
+                        }
+                    }
+                    &__edit-user {
+                        font-size: inherit;
+                        .b {
+                            text-decoration: none;
+                            color: white;
+                        }
+                    }
                 }
             }
         }
-    }
     &__groups {
         height: calc(100vh - 100px);
         background-color: #2f3e51;
@@ -45,16 +52,20 @@
     
         &__group {
             margin-bottom: 40px;
-            color: white;
-        
-            &__group-name {
-                font-size: 15px;
-                margin-bottom: 5px;
-            }
+            font-size: 11px;
 
-            &__latest-message {
-                font-size: 11px;
-                
+            .c {
+                text-decoration: none;
+                color: white;
+            
+            
+                &__name {
+                    margin-bottom: 5px;
+                    
+                }
+
+                &__message {
+                }
             }
         }
     }

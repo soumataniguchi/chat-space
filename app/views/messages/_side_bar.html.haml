@@ -5,12 +5,20 @@
                 taniguchi
             %ul.side_bar__side-header__box__box-menu
                 %li.side_bar__side-header__box__box-menu__new-group
-                    = icon('far', 'edit')
+                    -# = link_to new_group_path() do, class: "a"
+                    = link_to new_group_path(), class: "a" do
+                        = icon('far', 'edit')
+
                 %li.side_bar__side-header__box__box-menu__edit-user
-                    = icon('fas', 'cog')
+                    = link_to edit_user_path(current_user), class: "b" do
+                        = icon('fas', 'cog')
+               
+
     .side_bar__groups
-        .side_bar__groups__group
-            %p.side_bar__groups__group__group-name
-                a
-            %p.side_bar__groups__group__latest-message
-                まだメッセージはありません
+        - current_user.groups.each do |group|
+            .side_bar__groups__group
+                = link_to "#", class: "c" do
+                    .side_bar__groups__group__name
+                        = group.name
+                    .side_bar__groups__group__message
+                        メッセージはまだありません。
