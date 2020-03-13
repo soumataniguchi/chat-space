@@ -15,3 +15,8 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+<<<<<<< Updated upstream
+=======
+public/uploads/*
+public/uploads/*
+>>>>>>> Stashed changes
