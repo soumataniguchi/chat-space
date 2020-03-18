@@ -1,0 +1,5 @@
+-# チャットグループ編集画面
+.chat-group-form
+  %h1 チャットグループ編集
+  = render partial: 'form', locals: { group: @group }
+  _form.html.hamlの呼び出し（既存メンバーの呼び出しを@groupで行う）

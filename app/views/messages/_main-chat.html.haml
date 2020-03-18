@@ -1,0 +1,26 @@
+.chat
+  .contents
+    .contents__member
+      .contents__member_current-group
+        .group-name
+          = @group.name
+          .member-name 
+            member :
+            - @group.users.each do |group_user|
+              = group_user.name
+      = link_to edit_group_path(@group), data: {"turbolinks" => false} do
+        .button 
+          edit
+    .contents__main
+      .messages
+        = render @messages
+
+    .contents__form
+      .contents__form__new_message
+        = form_for [@group, @message] do |f|
+          .contents__form__new_message__input-box
+            = f.text_field :content, placeholder: 'type a message',class:'text'
+            = f.label :image, class: 'image' do
+              = fa_icon 'picture-o', class: 'icon'
+              = f.file_field :image, class: 'hidden'
+          = f.submit 'SEND', class: 'btn'
