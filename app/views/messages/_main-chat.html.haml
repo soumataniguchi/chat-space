@@ -23,4 +23,4 @@
             = f.label :image, class: 'image' do
               = fa_icon 'picture-o', class: 'icon'
               = f.file_field :image, class: 'hidden'
-          = f.submit 'send', class: 'btn'
+          = f.submit 'send', class: 'btn', "data-disable-with" => false

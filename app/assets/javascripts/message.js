@@ -46,6 +46,7 @@ $('#new_message').on('submit', function(e){
  $.ajax({
    url: url,
    type: "POST",
+  //  url: window.location.href,
    data: formData,
    dataType: 'json',
    processData: false,
