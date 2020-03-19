@@ -75,6 +75,7 @@ gem 'pry-rails'
 gem 'fog-aws'
 gem 'capistrano'
 
+
 group :production do
   gem 'unicorn', '5.4.1'
 end
