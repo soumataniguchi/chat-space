@@ -16,11 +16,11 @@
         = render @messages
 
     .contents__form
-      .contents__form__new_message
+      .contents__form__message
         = form_for [@group, @message] do |f|
-          .contents__form__new_message__input-box
+          .contents__form__message__input-box
             = f.text_field :content, placeholder: 'type a message',class:'text'
             = f.label :image, class: 'image' do
               = fa_icon 'picture-o', class: 'icon'
               = f.file_field :image, class: 'hidden'
-          = f.submit 'SEND', class: 'btn'
+          = f.submit 'send', class: 'btn'
