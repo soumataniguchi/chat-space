@@ -48,6 +48,7 @@ group :development, :test do
   gem 'capistrano-bundler'
   gem 'capistrano-rails'
   gem 'capistrano3-unicorn'
+  gem 'listen', '~> 3.0.5'
 end
 
 group :development do
