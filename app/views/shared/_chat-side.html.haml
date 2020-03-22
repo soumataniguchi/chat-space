@@ -13,7 +13,7 @@
   .chat-side__groups
     - current_user.groups.each do |group|
       .groups__boxes
-        = link_to group_messages_path(group) do
+        = link_to group_messages_path(group), class: "a" do
           .group-name
             = group.name
           .new-message

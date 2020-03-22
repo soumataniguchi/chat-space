@@ -12,12 +12,12 @@
       width: 100%;
       height: 30px;
       font-weight: bold;
-      color: white;
-      float: left;
+      color: #FFF;
+      // float: right;
       margin-top: 40px;
       &__menu {
         display: inline-block;
-        // float: right;
+        float: right;
         margin: 0 auto;
         .list {
           display: inline-block;
@@ -39,23 +39,29 @@
     .groups__boxes{
       height: 81px;
       width: 100%;
-      .group-name{
-        height: 15px;
-        font-size: 15px;
+      // text-decoration: none;
+      .a {
         text-decoration: none;
-        width: 100%;
-        color: #ffffff;
-        font-weight: bold;
-      }
-      .new-message{
-        height: 11px;
-        font-size: 6px;
-        width: 100%;
-        outline: none;
-        color: #ffffff;
-        font-weight: bold;
-        margin-top: 10px;
-        margin-bottom: 50px;
+
+      
+        .group-name{
+          height: 15px;
+          font-size: 15px;
+          text-decoration: none;
+          width: 100%;
+          color: #ffffff;
+          font-weight: bold;
+        }
+        .new-message{
+          height: 11px;
+          font-size: 6px;
+          width: 100%;
+          outline: none;
+          color: #ffffff;
+          font-weight: bold;
+          margin-top: 10px;
+          margin-bottom: 50px;
+        }
       }
     }
   }

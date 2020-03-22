@@ -77,8 +77,9 @@ body{
       .message{
         min-height: 40px;
         padding-bottom: 40px;
-        .message__upper{
+        .upper{
           display: flex;
+          // display: flex;
           .upper__name{
             font-weight: bold;
             color: #434A54;
@@ -111,7 +112,6 @@ body{
         width: 100%;
         .new_message{
           display: flex; 
-        // ここからscssが当たってない
           .contents__form__message__input-box{
             width: 100%;
             display: flex;
