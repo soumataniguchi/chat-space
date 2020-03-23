@@ -39,15 +39,39 @@
       font-size: 14px;
       font-weight: 200;
     }
+    .links {
+      .signup{
+        display: inline-block;
+        height: 50px;
+        padding: 0 30px;
+        line-height: 50px;
+        letter-spacing: 1px;
+        text-decoration: none;
+        text-align: center;
+        margin-top: 20px;
+        color: #fff;
+        background-color: #ccc;
+        font-size: 14px;
 
-    .btn {
-      margin-top: 20px;
-      color: #fff;
-      background-color: #ccc;
-      font-size: 14px;
+      }
+      .login{
+        display: inline-block;
+        height: 50px;
+        padding: 0 30px;
+        line-height: 50px;
+        letter-spacing: 1px;
+        text-decoration: none;
+        text-align: center;
+        margin-top: 20px;
+        color: #fff;
+        background-color: #ccc;
+        font-size: 14px;
+
+
+      }
+    
     }
   }
-
   .field {
     margin-bottom: 10px;
 
